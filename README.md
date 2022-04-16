@@ -1,2 +1,9 @@
-# learn-javascript-dom
-Learn JavaScript Document Object Model In Programmer Zaman Now
+# Learning JavaScript Document Object Model
+
+My Documentation Learning JavaScript Document Object Model In Programmer Zaman Now
+
+**Programmer Zaman Now, Instructor Eko Kurniawan Khannedy**
+
+* [Instagram](https://www.instagram.com/programmerzamannow/)
+* [Youtube](https://www.youtube.com/ProgrammerZamanNow)
+* [Udemy](https://www.udemy.com/user/eko-kurniawan/)
