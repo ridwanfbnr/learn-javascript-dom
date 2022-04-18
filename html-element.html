@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Element</title>
+</head>
+<body>
+
+    <a id="link"></a>
+    <p></p>
+
+    <script>
+
+        //  HTML Element
+        const links = document.getElementById("link");
+        links.className = "link";
+        links.href = "https://www.programmerzamannow.com";
+        links.target = "_blank";
+        links.textContent = "Website Programmer Zaman Now";
+        
+        const desc = document.querySelector("p");
+        desc.id = "description";
+        desc.className = "description";
+        desc.innerText = "Programmer Zaman Now";
+
+        /*
+            HTML Element
+
+        -   Element merupakan representasi dalam DOM
+        -   Namun, saat menggunakan HTML, implementasi detail sebenarnya adalah HTML Element,
+            yaitu turunan dari Element
+        -   HTML Element memiliki banyak sekali property dan method tambahan selain dari
+            element DOM
+        -   Kebanyakan HTML Element memiliki property yang sesuai dengan attribute yang ada pada
+            tag html tersebut, oleh karena itu, kadang kita tidak butuh lagi menggunakan
+            method setAttribute dan getAttribute
+        -   https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
+        */
+
+    </script>
+    
+</body>
+</html>

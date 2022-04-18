@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+<body>
+
+    <div id="content">
+        <script>
+            console.info("Hello World!");
+        </script>
+        <h1>This is Title</h1>
+        <p> <b>This</b> is <i>Description</i> </p>
+    </div>
+
+    <script>
+
+        //  Inner HTML
+        const content = document.getElementById("content");
+        console.info(content.innerHTML);
+
+        //  Mengubah Element dengan Inner HTML
+        content.innerHTML = "<h1>Belajar JavaScript DOM</h1> <p> <b>Eko</b> Kurniawan <i>Khannedy</i> </p>";
+
+        /*
+            Inner HTML
+
+        -   Jika textContent dan innerText hanya mengambil text saja, innerHTML akan mengambil
+            seluruh element HTML nya sebagai text
+        -   Ini juga cocok jika kita ingin mengubah isi dari element menggunakan text yang
+            berisi tag HTML
+        */
+
+        /*
+            Mengubah Element dengan innerHTML
+
+        -   Salah satu kemampuan dari innerHTML adalah, kita bisa mengubah isi dari children
+            sebuah element hanya dengan string
+        -   Tag yang terbaca dalam string secara otomatis akan menjadi child element
+        */
+
+    </script>
+    
+</body>
+</html>

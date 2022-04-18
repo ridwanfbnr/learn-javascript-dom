@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Global</title>
+</head>
+<body>
+
+    <input id="click" type="button" value="Click Me!">
+    
+    <script>
+
+        /*
+            Global Event Handler
+
+        -   Selain menggunakan Event Target, untuk menambahkan Event Handler, kita juga bisa
+            menggunakan Global Event Handler
+        -   Global Event Handler bukanlah sebuah super class, hanya kontrak yang bisa kita gunakan
+            untuk menambah event handler sesuai dengan type event nya
+        -   https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers
+        */
+
+        const button = document.getElementById("click");
+        button.onclick = function () {
+            button.setAttribute("value", "You Alredy Click Me!")
+            console.log("Button Di Click!");
+            //  Jadi harus didalam sini untuk menambahkan event targetnya berikutnya
+        };
+        /*
+        button.onclick = function () {
+            console.log("Button Di Click!");
+        }
+        */
+        //  Hanya bisa menambahkan satu kali saja event target atau callback
+
+
+    </script>
+    
+</body>
+</html>

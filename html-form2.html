@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Element 2</title>
+</head>
+<body>
+
+    <!-- HTML Form -->
+    <form name="commentFrom">
+        <label for="comment">
+            Comment : <input type="text" name="comment" id="comment">
+        </label>
+        <br>
+        <label for="from">
+            From : <input type="text" name="from" id="from">
+        </label>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <div id="commentList"></div>
+
+    <script>
+
+        //  HTML Form Element
+        document.forms["commentFrom"].onsubmit = function (event) {
+            const commentList = document.getElementById("commentList");
+            const comment = document.forms["commentFrom"]["comment"].value;
+            const from = document.forms["commentFrom"]["from"].value;
+
+            const commentItem = document.createElement("p");
+            commentItem.textContent = `Comment "${comment}" : From "${from}"`;
+            commentList.appendChild(commentItem);
+
+            document.forms["commentFrom"].reset();
+
+            event.preventDefault();
+        }
+
+        /*
+            Akses Form via Name
+
+        -   Salah satu kelebihan form adalah, kita bisa mengakses form hanya dengan menggunakan
+            form name
+        -   Kita bisa gunakan document.forms["name"]
+        -   Atau jika kita ingin mengakses input nya, kita juga bisa menggunakan name nya
+            document.forms["name"]["inputName"]
+        */
+
+    </script>
+    
+</body>
+</html>

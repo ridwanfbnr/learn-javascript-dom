@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Property</title>
+</head>
+<body>
+
+    <div id="id-content" class="class-content">
+        <h1 id="id-title" class="class-title">Belajar JavaScript DOM</h1>
+        <p id="id-description" class="class-description">Selamat Belajar JavaScript DOM</p>
+    </div>
+
+    <script>
+
+        /*
+            Element Property
+
+        -   Karena Element adalah turunan dari Node, semua property Node pun bisa digunakan
+            di Element
+        -   https://developer.mozilla.org/en-US/docs/Web/API/Element#properties
+        */
+
+        const content = document.getElementById("id-content");
+        console.info(content.id);
+        console.info(content.className);
+        console.info(content.tagName);
+
+        const title = document.getElementById("id-title");
+        console.info(title.id);
+        console.info(title.className);
+        console.info(title.tagName);
+        console.info(title.textContent);
+
+        const description = document.getElementById("id-description");
+        console.info(description.id);
+        console.info(description.className);
+        console.info(description.tagName);
+        console.info(description.textContent);
+
+
+    </script>
+    
+</body>
+</html>
